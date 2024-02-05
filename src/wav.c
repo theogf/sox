@@ -1588,7 +1588,7 @@ static const char *wav_format_str(unsigned tag)
     return f ? f->name : "unknown";
 }
 
-static int seek(sox_format_t * ft, uint64_t offset)
+static int seek(sox_format_t * ft, sox_uint64_t offset)
 {
   priv_t *   wav = (priv_t *) ft->priv;
 
